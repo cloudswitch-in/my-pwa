@@ -10,18 +10,38 @@
     <link rel="manifest" href="manifest.json">
     <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
     <title>My PWA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   </head>
   <body>
     <header>
       <h1>My PWA</h1>
     </header>
     <main>
-      <p>Welcome to My PWA!</p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-7 col-sm-9">
+            <form id="login-form">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email-help">
+                <small id="email-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="error-message" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
     </main>
     <button class="js-install-button" style="display: none;">
       Install My PWA
     </button>
-    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
