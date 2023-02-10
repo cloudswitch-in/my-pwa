@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#333333">
+     
+  
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="My PWA">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png">
     <link rel="stylesheet" href="/style.css">
@@ -12,6 +20,9 @@
   <body>
     <h1>My Progressive Web App</h1>
     <p>This is a simple example of a Progressive Web App.</p>
+      <button class="js-install-button" style="display: none;">
+      Install My PWA
+    </button>
     <script src="/main.js"></script>
   </body>
 </html>
